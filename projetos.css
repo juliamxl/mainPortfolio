@@ -1,0 +1,134 @@
+.box-projetos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.projetos{
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projetos p{
+    opacity: 0.8;
+}
+
+.conteudo-projeto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-projetos.active{
+    height: auto;
+    transition: all 0.5s ease-out;
+}
+
+.card-projetos img:hover{
+    cursor: pointer;
+}
+
+.infos-projeto{
+    display: none;
+    
+}
+
+.descricao{
+    margin: 10px;
+}
+
+.infos-projeto.active{
+    display: block;
+    width: 400px;
+    display: flex;
+    height: 100%;
+}
+
+.infos-projeto.active .infos-projeto-cont{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.infos-projeto.active .infos-projeto-cont p{
+    margin: 5px 0px;
+} 
+
+.infos-projeto.active .infos-projeto-cont a {
+    margin: 3px 0px;
+}
+
+.infos-projeto.active .infos-projeto-cont h3{
+    margin: 10px;
+}
+
+.infos-projeto.active .alinhar-cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+.infos-projeto.active .alinhar-cards .card{
+    margin: 0 8px;
+}
+
+@media (max-width: 1270px){
+    .infos-projeto.active .alinhar-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .box-projetos .projetos:nth-child(2).active{
+        height: 340px;
+    }
+    .box-projetos .projetos:nth-child(3).active{
+        height: 320px;
+    }
+    .box-projetos .projetos:nth-child(4).active{
+        height: 300px;
+    }
+    @media (max-width: 1020px){
+        .body-box{
+            flex-direction: column;
+            align-items: center;
+        }
+        .box-projetos{
+            align-items: center;
+            margin: 0%;
+        }
+        .projetos{
+            margin: 20px 0px 0px 0px;
+            width: 450px;
+        }
+        .projetos.active{
+            margin: 20px 0px 0px 0px;
+            height: 310px;
+        }
+        .infos-projeto.active .alinhar-cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+      
+        @media (max-width: 700px){
+            .projetos{
+                width: 350px;
+
+            }
+            .infos-projeto.active{
+                width: 290px;
+            }
+            .infos-projeto.active .infos-projeto-cont{
+                width: 290px;
+            } 
+            .projetos.active{
+                height: 360px;
+            }
+        }
+    }
+}

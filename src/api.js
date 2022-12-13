@@ -30,19 +30,7 @@ function dadosAPI() {
                                     </p>
                                     <h3 class="titulos">Tecnologias usadas:</h3>
                                     <div class="alinhar-cards">
-                                      ${item.topics.forEach(element => {
-                                            var tecnologias = 
-                                            `
-                                            <div class="card">
-                                                <p>HTML</p>
-                                            </div>
-                                            `
-                                            AlinharCards.innerHTML += 
-                                            `     <div class="card">
-                                            <p>HTML</p>
-                                        </div>`
-                                      })}
-                                     
+                                        <p>${item.topics}</p>
                                     </div>
                                     </div>
                                 </div>

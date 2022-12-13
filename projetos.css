@@ -70,8 +70,9 @@
 }
 
 .infos-projeto.active .alinhar-cards{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
+    margin-left: 20px;
+    font-size: 20px;
+    color: var(--bg-techs);
 }
 
 .infos-projeto.active .alinhar-cards .card{
@@ -79,11 +80,6 @@
 }
 
 @media (max-width: 1270px){
-    .infos-projeto.active .alinhar-cards{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-    }
     .box-projetos .projetos:nth-child(2).active{
         height: 340px;
     }

@@ -28,7 +28,6 @@
 
 .card-projetos.active{
     height: auto;
-    transition: all 0.5s ease-out;
 }
 
 .card-projetos img:hover{
@@ -37,7 +36,6 @@
 
 .infos-projeto{
     display: none;
-    
 }
 
 .descricao{

@@ -28,10 +28,7 @@ function dadosAPI() {
                                     <p>Repositório:
                                         <a target="_blank" href="${item.html_url}">${item.html_url}</a>
                                     </p>
-                                    <h3 class="titulos">Tecnologias usadas:</h3>
-                                    <div class="alinhar-cards">
-                                        <p>${item.topics}</p>
-                                    </div>
+
                                     </div>
                                 </div>
                             </div>

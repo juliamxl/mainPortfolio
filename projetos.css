@@ -47,6 +47,8 @@
     width: 400px;
     display: flex;
     height: 100%;
+    animation-name: abrirProjetos;
+    animation-duration: 0.5s;
 }
 
 .infos-projeto.active .infos-projeto-cont{
@@ -126,3 +128,17 @@
         }
     }
 }
+
+@keyframes abrirProjetos{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ 
+

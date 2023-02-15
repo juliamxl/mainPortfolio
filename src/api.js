@@ -8,9 +8,7 @@ function dadosAPI() {
         .then(data => {
             data.map(item => {
 
-                if (!item.description) {
-                    console.log('sdfs')
-                } else {
+            if(item.name != 'mainPortfolio' && item.description) {
                     var projeto = `<div class="projetos">
                         <div class="card-projetos">
                             <div class="conteudo-projeto">
@@ -35,6 +33,7 @@ function dadosAPI() {
                         </div>`
                     projetos.insertAdjacentHTML("beforeend", projeto)
                 }
+             
             })
         })
 }

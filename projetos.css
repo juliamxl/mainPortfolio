@@ -44,7 +44,7 @@
 
 .infos-projeto.active{
     display: block;
-    width: 400px;
+    width: 700px;
     display: flex;
     height: 100%;
     animation-name: abrirProjetos;
@@ -67,16 +67,6 @@
 
 .infos-projeto.active .infos-projeto-cont h3{
     margin: 10px;
-}
-
-.infos-projeto.active .alinhar-cards{
-    margin-left: 20px;
-    font-size: 20px;
-    color: var(--bg-techs);
-}
-
-.infos-projeto.active .alinhar-cards .card{
-    margin: 0 8px;
 }
 
 @media (max-width: 1270px){

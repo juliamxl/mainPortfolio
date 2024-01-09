@@ -62,14 +62,14 @@ a{
     margin-top: 20px;
     padding: 30px;
     background-color: var(--bg-cards);
-    width: 450px;
-    height: 260px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
 
 .item{
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -118,27 +118,25 @@ a{
 
 
 .experiencias{
-    align-items: center;
     margin-top: 20px;
     padding: 30px;
     background-color: var(--bg-cards);
     width: 450px;
-    height: 220px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .conteudo-exp{  
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .card-exp{
     color: var(--text-color);
 }
 
-.card-exp:nth-child(2){
-    margin-top: 12px;
-}
 
 .card-exp p{
     font-size: 15px;
